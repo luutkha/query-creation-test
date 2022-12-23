@@ -10,4 +10,6 @@ public interface IWordService {
 	List<Word> findByEnNotNull();
 
 	List<Word> addNewListWords(List<Word> listWords);
+
+	Word findWordById(Long id);
 }

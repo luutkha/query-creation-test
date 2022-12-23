@@ -33,4 +33,10 @@ public class WordController implements IWordController {
 		return ResponseFactory.success(iWordService.addNewListWords(request));
 	}
 
+	@Override
+	public ResponseEntity<BaseResponse<Word>> getApartmentDetail(Long wordID) {
+		// TODO Auto-generated method stub
+		return ResponseFactory.success(iWordService.findWordById(wordID));
+	}
+
 }

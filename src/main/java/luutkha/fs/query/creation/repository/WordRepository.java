@@ -8,4 +8,6 @@ import luutkha.fs.query.creation.entity.Word;
 
 public interface WordRepository extends JpaRepository<Word, Long> {
 	List<Word> findByEngNotNull();
+
+	Word findByEng(String eng);
 }
